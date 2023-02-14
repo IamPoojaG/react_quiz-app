@@ -77,6 +77,276 @@ function App() {
         },
       ],
     },
+    {
+      id: 4,
+      question: 'Name the National bird of India?',
+      answers: [
+        {
+          text: 'Duck',
+          correct: false,
+        },
+        {
+          text: 'Peacock',
+          correct: true,
+        },
+        {
+          text: 'Kite',
+          correct: false,
+        },
+        {
+          text: 'Parrot',
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 5,
+      question: 'How many days are there in a week?',
+      answers: [
+        {
+          text: '7 days',
+          correct: true,
+        },
+        {
+          text: '6 days',
+          correct: false,
+        },
+        {
+          text: '8 days',
+          correct: false,
+        },
+        {
+          text: '5 days',
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 6,
+      question: 'Which is the smallest month of the year?',
+      answers: [
+        {
+          text: 'January',
+          correct: false,
+        },
+        {
+          text: 'March',
+          correct: false,
+        },
+        {
+          text: 'December',
+          correct: false,
+        },
+        {
+          text: 'February',
+          correct: true,
+        },
+      ],
+    },
+    {
+      id: 7,
+      question: 'Name the National animal of India?',
+      answers: [
+        {
+          text: 'Lion',
+          correct: false,
+        },
+        {
+          text: 'Tiger',
+          correct: true,
+        },
+        {
+          text: 'Elephant',
+          correct: false,
+        },
+        {
+          text: 'Horse',
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 8,
+      question:
+        'For which of the following disciplines is Nobel Prize awarded?',
+      answers: [
+        {
+          text: 'Physics and Chemistry',
+          correct: false,
+        },
+        {
+          text: 'Physiology or Medicine',
+          correct: false,
+        },
+        {
+          text: 'Literature,Peace and Economics',
+          correct: false,
+        },
+        {
+          text: 'All The Above',
+          correct: true,
+        },
+      ],
+    },
+    {
+      id: 9,
+      question: 'India has largest deposites of ____ in the world ',
+      answers: [
+        {
+          text: 'Gold',
+          correct: false,
+        },
+        {
+          text: 'Copper',
+          correct: false,
+        },
+        {
+          text: 'Mica',
+          correct: true,
+        },
+        {
+          text: 'None of the above',
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 10,
+      question:
+        'India tallest stone statue of the Jain sage Gomateshwara is at?',
+      answers: [
+        {
+          text: 'Mysore,Karnataka',
+          correct: false,
+        },
+        {
+          text: 'New Delhi',
+          correct: false,
+        },
+        {
+          text: 'Mandu, Madhya Pradesh',
+          correct: false,
+        },
+        {
+          text: 'Sravanabelagola,Karnataka',
+          correct: true,
+        },
+      ],
+    },
+    {
+      id: 11,
+      question:
+        'How many times has Brazil won the World Cup Football Championship?',
+      answers: [
+        {
+          text: 'Four times',
+          correct: false,
+        },
+        {
+          text: 'Five times',
+          correct: true,
+        },
+        {
+          text: 'Twice',
+          correct: false,
+        },
+        {
+          text: 'Once',
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 12,
+      question: 'IDA stands for',
+      answers: [
+        {
+          text: 'Indian Development Agency',
+          correct: false,
+        },
+        {
+          text: 'International Development Agency',
+          correct: true,
+        },
+        {
+          text: 'Industrial Development Analyses',
+          correct: false,
+        },
+        {
+          text: 'None of the above',
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 13,
+      question:
+        'In cricket, a run taken when the ball passes the batsman without touching his bat or body is called',
+      answers: [
+        {
+          text: 'drive',
+          correct: false,
+        },
+        {
+          text: 'bosie',
+          correct: false,
+        },
+        {
+          text: 'leg bye',
+          correct: false,
+        },
+        {
+          text: 'bye',
+          correct: true,
+        },
+      ],
+    },
+    {
+      id: 14,
+      question:
+        'Indira Gandhi Centre for Atomic Research, established in 1971, is located at',
+      answers: [
+        {
+          text: 'Indore',
+          correct: false,
+        },
+        {
+          text: 'Kalpakkam, Chenna',
+          correct: true,
+        },
+        {
+          text: 'Trombay, Maharashtra',
+          correct: false,
+        },
+        {
+          text: 'Kolkata',
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 15,
+      question:
+        'In which year did Sir Edmund Hillary reach the summit of Mount Everest?',
+      answers: [
+        {
+          text: '1953',
+          correct: true,
+        },
+        {
+          text: '1952',
+          correct: false,
+        },
+        {
+          text: '1954',
+          correct: false,
+        },
+        {
+          text: '1955',
+          correct: false,
+        },
+      ],
+    },
   ];
 
   const moneyPyramid = useMemo(
