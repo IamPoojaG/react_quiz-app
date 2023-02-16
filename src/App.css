@@ -204,3 +204,8 @@
   font-size: 18px;
   font-weight: 500;
 }
+.correctPtag {
+  color: green;
+  font-size: 1.2rem;
+  font-weight: 900;
+}

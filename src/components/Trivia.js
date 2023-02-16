@@ -8,6 +8,7 @@ export default function Trivia({
   const [question, setQuestion] = useState(null);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [className, setClassName] = useState('answer');
+  const [showAnswer, setShowAnswer] = useState('');
 
   useEffect(() => {
     setQuestion(data[questionNumber - 1]);
@@ -24,6 +25,14 @@ export default function Trivia({
     setClassName('answer active');
     delay(3000, () => {
       setClassName(a.correct ? 'answer correct' : 'answer wrong');
+      if (!a.correct) {
+        for (let index = 0; index < question?.answers.length; index++) {
+          const element = question?.answers[index];
+          if (element.correct === true) {
+            setShowAnswer(`The correct answer is ${element.text}`);
+          }
+        }
+      }
     });
 
     delay(5000, () => {
@@ -40,18 +49,21 @@ export default function Trivia({
     });
   };
   return (
-    <div className='trivia'>
-      <div className='question'>{question?.question}</div>
-      <div className='answers'>
-        {question?.answers.map((a) => (
-          <div
-            className={selectedAnswer === a ? className : 'answer'}
-            onClick={() => !selectedAnswer && handleClick(a)}
-          >
-            {a.text}
-          </div>
-        ))}
+    <>
+      <div className='trivia'>
+        <div className='question'>{question?.question}</div>
+        <div className='answers'>
+          {question?.answers.map((a) => (
+            <div
+              className={selectedAnswer === a ? className : 'answer'}
+              onClick={() => !selectedAnswer && handleClick(a)}
+            >
+              {a.text}
+            </div>
+          ))}
+        </div>
+        <p className='correctPtag'>{showAnswer}</p>
       </div>
-    </div>
+    </>
   );
 }
